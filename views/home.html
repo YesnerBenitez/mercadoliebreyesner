@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;400;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/e6433e2354.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/MercadoLibre_Logotipo.svg.png" class="logo">
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin targeta de credito</h2>
+        </div>
+        
+
+        <a href="#" class="hamburguer-botton">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="right-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas oficiales</a></li>
+                <li><a href="#">vender</a></li>
+                <li><a href="#">ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">Crea tu cuenta<i class="fa-solid fa-credit-card"></i></a></li>
+                <li><a href="#">Ingresa</a><i class="fa-sharp fa-solid fa-circle-up"></i></li>
+                <li><a href="#">Mis compras<i class="fa-solid fa-cart-shopping"></i></i></a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre del Producto:</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio:</label>
+            <input type="text" name="precio" placeholder="123.56" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="bu">Buenos Aires</option>
+                <option value="co">Colombia</option>
+                <option value="ba">Brasil</option>
+                <option value="ve">Venezuela</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Categoria:</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+                <option value="tecnologia">Tecnologia</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Descripcion:</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>Esta en Oferta:</label>
+            <input type="radio" name="Oferta">
+        </div>
+
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+    </form>
+    <article class="producto">
+        <img src="/images/sony play.jpg" alt="">
+        <h2>PlayStation</h2>
+    </article>
+    <article class="producto">
+        <img src="/images/PlayStation 6.jpg" alt="">
+        <h2>PlayStation5</h2>
+    </article>
+    <article class="producto">
+        <img src="/images/PlayStation5.jpg" alt="">
+        <h2>PlayStation6</h2>
+    </article>
+</body>
+</html>
